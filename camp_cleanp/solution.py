@@ -29,9 +29,8 @@ def process_line(line) -> int:
 
 
 def contains(a: list, b: list):
-    if all([x in a for x in b]) or all([x in b for x in a]):
-        return True
-    return False
+    return all([x in a for x in b]) or all([x in b for x in a])
+    
 
 
 

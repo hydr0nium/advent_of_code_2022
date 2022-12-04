@@ -27,9 +27,8 @@ def process_line(line) -> int:
 
 
 def overlap(a: list, b: list):
-    if any([x in a for x in b]) or any([x in b for x in a]):
-        return True
-    return False
+    return any([x in a for x in b]) or any([x in b for x in a])
+    
 
 
 
