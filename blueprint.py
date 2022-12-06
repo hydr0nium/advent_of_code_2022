@@ -2,7 +2,7 @@
 from typing import *
 
 def main():
-    with open("./input") as f:
+    with open("./input.txt") as f:
         lines = f.readlines()
         for line in lines:
             process(line)
