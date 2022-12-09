@@ -58,6 +58,8 @@ class DirectoryOrFile():
                 Children: {[x.get_name() for x in self.get_children()]}
                 Size: {self.get_size()}
                 '''
+
+    
     def set_size_all(self) -> int:
         size = 0
         if not self.isFolder():
@@ -183,10 +185,6 @@ def createTree(t:Tree, root: DirectoryOrFile, parent: DirectoryOrFile=None,count
         counter += 1
         counter = createTree(t, child, parent=root, counter=counter,parentid=parentid)
     return counter
-
-
-def process(line: str):
-    pass
 
 def remove_backslash_n(string: str):
     return string.strip("\n")
