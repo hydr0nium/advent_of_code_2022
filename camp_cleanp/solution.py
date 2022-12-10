@@ -32,8 +32,5 @@ def contains(a: list, b: list):
     return all([x in a for x in b]) or all([x in b for x in a])
     
 
-
-
-
 if __name__ == "__main__":
     main()
