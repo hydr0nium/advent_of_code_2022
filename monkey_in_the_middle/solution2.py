@@ -126,7 +126,7 @@ class Monkey():
 
 
 def main():
-    with open("C:/Users/demia/Documents/Advent_of_Code/monkey_in_the_middle/input.txt") as f:
+    with open("./input.txt") as f:
         monkeys: List[Monkey] = []
         while True:
             lines = []
