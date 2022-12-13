@@ -10,8 +10,6 @@ def main():
 def process(line: str):
     pass
 
-def remove_backslash_n(string: str):
-    return string.strip("\n")
 
 if __name__ == "__main__":
     main()
